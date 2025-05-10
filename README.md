@@ -59,4 +59,4 @@ http://localhost:3000
 - If you find any issues or bugs while using RepoRover, please raise an issue on GitHub or report it directly to us via Telegram: [AndroidPortWorldDiscussion](https://t.me/AndroidPortWorldDiscussion).
 
 ## © License
-- MIT License — Free to use, fork, and enhance.
+- GPL-v3 License — Free to use, fork, and enhance.
