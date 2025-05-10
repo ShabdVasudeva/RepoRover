@@ -1,8 +1,6 @@
-
-import type {NextConfig} from 'next';
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
   typescript: {
     ignoreBuildErrors: true,
   },
@@ -22,13 +20,14 @@ const nextConfig: NextConfig = {
         hostname: 'github.com',
         port: '',
         pathname: '/**',
-      }
+      },
     ],
   },
-  // Make environment variables available to the client-side
-  // Note: Prefix with NEXT_PUBLIC_ to expose to the browser
-  // These are already prefixed, so they are automatically available.
-  // No explicit publicRuntimeConfig needed if using NEXT_PUBLIC_ prefix.
+  experimental: {
+    serverActions: {
+      bodySizeLimit: '10mb', // increase limit as needed
+    },
+  },
 };
 
 export default nextConfig;
